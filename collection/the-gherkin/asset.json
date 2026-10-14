@@ -1,0 +1,263 @@
+{
+  "id": "the-gherkin",
+  "name": "The Gherkin (30 St Mary Axe)",
+  "anchor": [
+    -0.08033250870884309,
+    51.514475163852666
+  ],
+  "heading": 0,
+  "units": "metres",
+  "axes": "X east / Y up / Z south",
+  "minZoom": 15,
+  "detailZoom": 17,
+  "lods": {
+    "low": {
+      "url": "low.glb",
+      "bytes": 155032,
+      "sha256": "3c169fc625fd7068c6edbd3fbf9f9a8168dbc0894818085f11c57fea4bd52770"
+    },
+    "detail": {
+      "url": "detail.glb",
+      "bytes": 733320,
+      "sha256": "aedc670209d7cb9df3570d875eabfff63fa70764327b5cb30aa2cc81119c98ae"
+    }
+  },
+  "triangles": 32678,
+  "boundsBlenderM": [
+    [
+      -28.57990264892578,
+      -28.57990264892578,
+      0
+    ],
+    [
+      28.57990264892578,
+      28.57990264892578,
+      180
+    ]
+  ],
+  "entranceLights": [],
+  "replacementFootprint": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -0.0799227,
+          51.5144749
+        ],
+        [
+          -0.0799289,
+          51.5144308
+        ],
+        [
+          -0.0799473,
+          51.514388
+        ],
+        [
+          -0.0799773,
+          51.5143479
+        ],
+        [
+          -0.080018,
+          51.5143116
+        ],
+        [
+          -0.0800681,
+          51.5142803
+        ],
+        [
+          -0.0801262,
+          51.5142548
+        ],
+        [
+          -0.0801906,
+          51.5142359
+        ],
+        [
+          -0.0802592,
+          51.5142242
+        ],
+        [
+          -0.0803299,
+          51.5142201
+        ],
+        [
+          -0.0804008,
+          51.5142237
+        ],
+        [
+          -0.0804696,
+          51.5142348
+        ],
+        [
+          -0.0805343,
+          51.5142532
+        ],
+        [
+          -0.0805936,
+          51.5142786
+        ],
+        [
+          -0.0806448,
+          51.51431
+        ],
+        [
+          -0.0806864,
+          51.5143466
+        ],
+        [
+          -0.0807171,
+          51.5143871
+        ],
+        [
+          -0.080736,
+          51.5144303
+        ],
+        [
+          -0.0807424,
+          51.5144749
+        ],
+        [
+          -0.0807362,
+          51.5145193
+        ],
+        [
+          -0.0807177,
+          51.5145624
+        ],
+        [
+          -0.0806874,
+          51.5146028
+        ],
+        [
+          -0.0806463,
+          51.5146393
+        ],
+        [
+          -0.0805956,
+          51.5146707
+        ],
+        [
+          -0.0805368,
+          51.5146963
+        ],
+        [
+          -0.0804719,
+          51.514715
+        ],
+        [
+          -0.0804026,
+          51.5147265
+        ],
+        [
+          -0.0803315,
+          51.5147302
+        ],
+        [
+          -0.0802604,
+          51.5147262
+        ],
+        [
+          -0.0801915,
+          51.5147146
+        ],
+        [
+          -0.0801269,
+          51.5146958
+        ],
+        [
+          -0.0800685,
+          51.5146702
+        ],
+        [
+          -0.0800181,
+          51.5146388
+        ],
+        [
+          -0.0799772,
+          51.5146023
+        ],
+        [
+          -0.0799472,
+          51.514562
+        ],
+        [
+          -0.0799288,
+          51.5145191
+        ],
+        [
+          -0.0799227,
+          51.5144749
+        ]
+      ]
+    ]
+  },
+  "basemapReplacement": null,
+  "osm": {
+    "type": "way",
+    "id": 4959489,
+    "version": 38,
+    "timestamp": "2025-05-09T15:54:27Z",
+    "url": "https://www.openstreetmap.org/way/4959489"
+  },
+  "additionalOsm": [],
+  "rightsStatus": "review-required",
+  "geometryStatus": "draft",
+  "attribution": "Open Landmarks; contains \u00a9 OpenStreetMap contributors, ODbL-1.0; Architectural measurements from the linked official sources",
+  "references": [
+    {
+      "title": "File:30 St Mary Axe from Leadenhall Street.jpg",
+      "author": "Aurelien Guichard from London, United Kingdom",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:30_St_Mary_Axe_from_Leadenhall_Street.jpg",
+      "sourceSha1": "e7dc3960d596701f513419f0e4dfce417d3b3f4a",
+      "use": "visual-reference-only",
+      "view": "Individually inspected: Leadenhall Street exterior and closer upper facade. Recognizable taper, diamond triangulation, six dark helical bands, narrow horizontal joints and double collar below summit. Neighbouring church excluded. Photographs are visual references only."
+    },
+    {
+      "title": "File:London UK Gherkin-01.jpg",
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:London_UK_Gherkin-01.jpg",
+      "sourceSha1": "978b55da5b984321f47c17ce01fda296174fabfe",
+      "use": "visual-reference-only",
+      "view": "Individually inspected: Leadenhall Street exterior and closer upper facade. Recognizable taper, diamond triangulation, six dark helical bands, narrow horizontal joints and double collar below summit. Neighbouring church excluded. Photographs are visual references only."
+    }
+  ],
+  "aliases": [
+    "The Gherkin",
+    "30 St Mary Axe",
+    "London"
+  ],
+  "authors": [
+    "Open Landmarks contributors"
+  ],
+  "artisticLicense": "CC-BY-4.0",
+  "spatialDataLicense": "ODbL-1.0",
+  "licenseScope": "CC BY applies to original artistic contributions only; ODbL applies to OSM-derived spatial data. Reference photographs retain their own licenses. Dimension evidence from https://www.cityoflondon.gov.uk/things-to-do/architecture/modern-architecture/30-st-mary-axe-the-gherkin, https://www.buildingthegherkin.com/pdf/fosterandpartners.pdf retains factual measurements; source documents are linked, not redistributed.",
+  "assistance": "AI-assisted architectural interpretation and procedural recipe authoring; deterministic Python/Blender export. No photographic textures.",
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "checks": {},
+    "notes": "Automated export and source-registration checks, and multi-view studio inspection, are retained in the linked evidence. Independent rights, appearance and map integration approval remains pending.",
+    "evidence": "https://github.com/benjamintd/open-landmarks/blob/main/collection/the-gherkin/review-evidence.json"
+  },
+  "modelingNotes": [
+    "Actual OSM way/4959489 (Q191161) establishes the180m tip, centre and maximum circular plan. Six mapped building parts at8,20.5,37,53.5,70 and180m supply lower radius samples. Radius is derived from each part area; tags and geographic plan are retained.",
+    "City of London confirms41 storeys and180m. Foster and Partners original project press sheet describes the radial plan, widening lower body, tapering apex, triangulated envelope and spiralling atria. Sources: https://www.cityoflondon.gov.uk/things-to-do/architecture/modern-architecture/30-st-mary-axe-the-gherkin and https://www.buildingthegherkin.com/pdf/fosterandpartners.pdf",
+    "Individually inspected Commons views from Leadenhall Street and London UK Gherkin-01 show six helical dark bands, triangular glazing, bright primary diagonals, fine floor seams, a double collar below the summit and a curved top lens. These inform original geometry; no photograph becomes a texture.",
+    "The continuous lower profile interpolates the mapped radius samples rather than extruding six stair-stepped cylinders. Above70m a photo-guided superellipse approximates the tapered envelope; exponent.65 is inference, not surveyed geometry. Floor spacing and six helical bands are schematic;36 angular cells resolve the silhouette and sampled summit lens.",
+    "Structural glazing is opaque glass, with the approved solar-panel blue-grey finish reused for darker atrium glass. There are no solar panels implied by this material name. Primary diagrid tubes are exaggerated to.14m radius for map readability; finer.035m mullions are detail-only. The low LOD retains the full envelope, six bands, primary diagonals and summit collar. Offices, internal atria and neighbouring buildings are omitted."
+  ],
+  "source": "source.blend.gz",
+  "spatialSource": "spatial-source.json",
+  "preview": "preview.webp",
+  "previewDirection": [
+    1.5,
+    0.75,
+    2
+  ],
+  "wikidata": "Q191161"
+}

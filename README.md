@@ -6,12 +6,11 @@ Paris is the starting coverage, not a collection identifier or release boundary.
 
 [Explore the website](https://open-landmarks.benmaps.fr).
 
-The current collection has 83 models: 24 hero landmarks approved for their exact
-revisions, and 59 drafts. The drafts include eight upgraded Paris Hero models,
-Petit Palais, Golden Gate Bridge and ten San Francisco landmarks: Coit Tower,
-Transamerica Pyramid, Palace of Fine Arts, City Hall, Ferry Building, Grace
-Cathedral, Conservatory of Flowers, Salesforce Tower, Painted Ladies and the
-Alcatraz Cellhouse. Structural validation alone does not approve rights,
+The current collection has 88 models: 24 hero landmarks approved for their exact
+revisions, and 64 drafts. The London drafts add Elizabeth Tower, Nelson’s Column,
+the Gherkin, the Palace of Westminster and the London Eye. Parliament’s preview
+includes the separately downloadable Elizabeth Tower.
+Structural validation alone does not approve rights,
 appearance or map integration. The approved channel advances through a dataset
 publication after those reviews.
 

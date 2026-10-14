@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "asset": "the-gherkin",
+  "status": "independent-review-pending",
+  "modelHashes": {
+    "model": "aedc670209d7cb9df3570d875eabfff63fa70764327b5cb30aa2cc81119c98ae",
+    "low": "3c169fc625fd7068c6edbd3fbf9f9a8168dbc0894818085f11c57fea4bd52770"
+  },
+  "spatialSourceSha256": "7be550f81bb91189f7cc343b7a65636386d9218b86fe87a637d131eb15b0bbd0",
+  "exportValidation": [
+    {
+      "lod": "model",
+      "sha256": "aedc670209d7cb9df3570d875eabfff63fa70764327b5cb30aa2cc81119c98ae",
+      "bytes": 733320,
+      "drawCalls": 5,
+      "triangles": 32678,
+      "gltfErrors": 0,
+      "gltfWarnings": 0,
+      "materials": [],
+      "windows": 0,
+      "unsupported": 0,
+      "degenerate": 0,
+      "opposed": 0,
+      "duplicate": 0,
+      "passed": true
+    },
+    {
+      "lod": "low",
+      "sha256": "3c169fc625fd7068c6edbd3fbf9f9a8168dbc0894818085f11c57fea4bd52770",
+      "bytes": 155032,
+      "drawCalls": 4,
+      "triangles": 6394,
+      "gltfErrors": 0,
+      "gltfWarnings": 0,
+      "materials": [],
+      "windows": 0,
+      "unsupported": 0,
+      "degenerate": 0,
+      "opposed": 0,
+      "duplicate": 0,
+      "passed": true
+    }
+  ],
+  "sourceRegistration": [
+    {
+      "lod": "model",
+      "sha256": "aedc670209d7cb9df3570d875eabfff63fa70764327b5cb30aa2cc81119c98ae",
+      "checks": {
+        "height": true,
+        "grounded": true,
+        "plan": true,
+        "roofDirection": true,
+        "upper0": true
+      },
+      "metrics": {
+        "heightM": 180.0,
+        "planCoverage": 1.0000000000000002,
+        "outsidePlanM2": 0.0,
+        "downwardSlopedRoofTriangles": 0,
+        "upper0": {
+          "coverage": 0.9998520657123805,
+          "outsideM2": 0.0,
+          "z": 69
+        }
+      },
+      "passed": true
+    },
+    {
+      "lod": "low",
+      "sha256": "3c169fc625fd7068c6edbd3fbf9f9a8168dbc0894818085f11c57fea4bd52770",
+      "checks": {
+        "height": true,
+        "grounded": true,
+        "plan": true,
+        "roofDirection": true,
+        "upper0": true
+      },
+      "metrics": {
+        "heightM": 180.0,
+        "planCoverage": 0.999997478090013,
+        "outsidePlanM2": 0.0,
+        "downwardSlopedRoofTriangles": 0,
+        "upper0": {
+          "coverage": 0.9983569224283907,
+          "outsideM2": 0.0,
+          "z": 69
+        }
+      },
+      "passed": true
+    }
+  ],
+  "studioInspection": {
+    "passed": true,
+    "notes": "Inspected front/rear/top and low-LOD sheet, full front and hero close/aerial. Continuous widening lower envelope and taper to the lens are readable; six contrasting helical atrium bands, diagonal frame and double summit collar remain present. Fine mullions are reduced where primary bars occupy the same path. Low keeps the envelope, six bands and primary diagonals. Glazing is opaque and the sampled bands have faceted edges; this is the documented map-scale approximation."
+  },
+  "note": "These checks record structural/source-registration evidence and agent visual inspection. They do not approve rights or production map integration."
+}

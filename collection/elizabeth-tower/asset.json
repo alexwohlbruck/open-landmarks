@@ -1,0 +1,398 @@
+{
+  "id": "elizabeth-tower",
+  "name": "Elizabeth Tower",
+  "anchor": [
+    -0.12457352696457669,
+    51.500700465991045
+  ],
+  "heading": 0,
+  "units": "metres",
+  "axes": "X east / Y up / Z south",
+  "minZoom": 15,
+  "detailZoom": 17,
+  "lods": {
+    "low": {
+      "url": "low.glb",
+      "bytes": 205680,
+      "sha256": "073f09850da39f08fa5bb4b5b7a4036360ddaba0e46fc1dab4aab9994ca2d674"
+    },
+    "detail": {
+      "url": "detail.glb",
+      "bytes": 1431068,
+      "sha256": "cfc00bc16755d9dd8a989f1751ecb62deeec44f44c98a21a50db111bc462aaf3"
+    }
+  },
+  "triangles": 33512,
+  "boundsBlenderM": [
+    [
+      -7.490651607513428,
+      -7.439363956451416,
+      0
+    ],
+    [
+      7.542989730834961,
+      7.59157133102417,
+      96
+    ]
+  ],
+  "entranceLights": [],
+  "replacementFootprint": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -0.1246559,
+          51.5006462
+        ],
+        [
+          -0.1246563,
+          51.5006438
+        ],
+        [
+          -0.1245827,
+          51.5006387
+        ],
+        [
+          -0.1245333,
+          51.5006353
+        ],
+        [
+          -0.1245091,
+          51.5006336
+        ],
+        [
+          -0.1245087,
+          51.5006361
+        ],
+        [
+          -0.1244919,
+          51.5006351
+        ],
+        [
+          -0.1244881,
+          51.5006348
+        ],
+        [
+          -0.1244876,
+          51.5006372
+        ],
+        [
+          -0.1244866,
+          51.500643
+        ],
+        [
+          -0.1244829,
+          51.5006428
+        ],
+        [
+          -0.1244812,
+          51.5006526
+        ],
+        [
+          -0.1244849,
+          51.5006529
+        ],
+        [
+          -0.1244846,
+          51.5006545
+        ],
+        [
+          -0.1244828,
+          51.5006544
+        ],
+        [
+          -0.124481,
+          51.5006553
+        ],
+        [
+          -0.1244808,
+          51.5006568
+        ],
+        [
+          -0.1244818,
+          51.5006575
+        ],
+        [
+          -0.1244795,
+          51.5006701
+        ],
+        [
+          -0.1244769,
+          51.5006848
+        ],
+        [
+          -0.1244737,
+          51.5007022
+        ],
+        [
+          -0.124471,
+          51.5007169
+        ],
+        [
+          -0.1244687,
+          51.5007296
+        ],
+        [
+          -0.1244675,
+          51.5007302
+        ],
+        [
+          -0.1244673,
+          51.5007317
+        ],
+        [
+          -0.1244688,
+          51.5007328
+        ],
+        [
+          -0.1244707,
+          51.500733
+        ],
+        [
+          -0.1244706,
+          51.5007336
+        ],
+        [
+          -0.1244667,
+          51.5007333
+        ],
+        [
+          -0.1244649,
+          51.5007432
+        ],
+        [
+          -0.1244689,
+          51.5007434
+        ],
+        [
+          -0.1244675,
+          51.5007511
+        ],
+        [
+          -0.1244672,
+          51.5007533
+        ],
+        [
+          -0.1244707,
+          51.5007535
+        ],
+        [
+          -0.1244831,
+          51.5007544
+        ],
+        [
+          -0.1244824,
+          51.500758
+        ],
+        [
+          -0.124498,
+          51.5007589
+        ],
+        [
+          -0.1244986,
+          51.5007555
+        ],
+        [
+          -0.1244996,
+          51.5007555
+        ],
+        [
+          -0.1244994,
+          51.5007569
+        ],
+        [
+          -0.1245009,
+          51.500758
+        ],
+        [
+          -0.1245033,
+          51.5007582
+        ],
+        [
+          -0.1245046,
+          51.5007575
+        ],
+        [
+          -0.1245245,
+          51.5007589
+        ],
+        [
+          -0.1245482,
+          51.5007605
+        ],
+        [
+          -0.1245763,
+          51.5007625
+        ],
+        [
+          -0.1245999,
+          51.5007641
+        ],
+        [
+          -0.12462,
+          51.5007655
+        ],
+        [
+          -0.1246211,
+          51.5007664
+        ],
+        [
+          -0.1246234,
+          51.5007665
+        ],
+        [
+          -0.1246252,
+          51.5007656
+        ],
+        [
+          -0.1246255,
+          51.5007642
+        ],
+        [
+          -0.1246274,
+          51.5007643
+        ],
+        [
+          -0.1246268,
+          51.5007678
+        ],
+        [
+          -0.1246408,
+          51.5007687
+        ],
+        [
+          -0.1246415,
+          51.5007653
+        ],
+        [
+          -0.1246551,
+          51.5007662
+        ],
+        [
+          -0.1246585,
+          51.5007664
+        ],
+        [
+          -0.1246588,
+          51.5007644
+        ],
+        [
+          -0.1246599,
+          51.5007584
+        ],
+        [
+          -0.1246632,
+          51.5007586
+        ],
+        [
+          -0.1246645,
+          51.5007498
+        ],
+        [
+          -0.1246684,
+          51.5007281
+        ],
+        [
+          -0.124676,
+          51.5006865
+        ],
+        [
+          -0.1246796,
+          51.5006675
+        ],
+        [
+          -0.1246814,
+          51.5006573
+        ],
+        [
+          -0.1246778,
+          51.5006571
+        ],
+        [
+          -0.124679,
+          51.5006497
+        ],
+        [
+          -0.1246794,
+          51.5006478
+        ],
+        [
+          -0.1246761,
+          51.5006476
+        ],
+        [
+          -0.1246559,
+          51.5006462
+        ]
+      ]
+    ]
+  },
+  "basemapReplacement": null,
+  "osm": {
+    "type": "way",
+    "id": 123557148,
+    "version": 51,
+    "timestamp": "2026-08-13T10:25:34Z",
+    "url": "https://www.openstreetmap.org/way/123557148"
+  },
+  "additionalOsm": [],
+  "rightsStatus": "review-required",
+  "geometryStatus": "draft",
+  "attribution": "Open Landmarks; contains \u00a9 OpenStreetMap contributors, ODbL-1.0; Architectural measurements from the linked official sources",
+  "references": [
+    {
+      "title": "File:Elizabeth Tower and the north front of the Palace of Westminster, London.jpg",
+      "author": "Christian David",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster,_London.jpg",
+      "sourceSha1": "a49f3f50ecddeed475eff4ebc9ca58d171ae6191",
+      "use": "visual-reference-only",
+      "view": "Individually inspected full-size exterior: four blue-framed white dials, Gothic shaft with narrow lancets and string courses, open lower arcade, lower hipped roof with two dormer rows, smaller upper belfry and steep slate spire; restored colours visible in 2023 photograph. The palace itself is excluded."
+    },
+    {
+      "title": "File:06 2023 Exterior of Elizabeth Tower IMG 7513.jpg",
+      "author": "Alexander-93",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:06_2023_Exterior_of_Elizabeth_Tower_IMG_7513.jpg",
+      "sourceSha1": "59ef985b85e5128d1c358d9e143f578ed0b71649",
+      "use": "visual-reference-only",
+      "view": "Individually inspected full-size exterior: four blue-framed white dials, Gothic shaft with narrow lancets and string courses, open lower arcade, lower hipped roof with two dormer rows, smaller upper belfry and steep slate spire; restored colours visible in 2023 photograph. The palace itself is excluded."
+    }
+  ],
+  "aliases": [
+    "Big Ben",
+    "London"
+  ],
+  "authors": [
+    "Open Landmarks contributors"
+  ],
+  "artisticLicense": "CC-BY-4.0",
+  "spatialDataLicense": "ODbL-1.0",
+  "licenseScope": "CC BY applies to original artistic contributions only; ODbL applies to OSM-derived spatial data. Reference photographs retain their own licenses. Dimension evidence from https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/, https://www.parliament.uk/mps-lords-and-offices/offices/commons/media-relations-group/news/north-dial-of-the-elizabeth-tower-revealed/ retains factual measurements; source documents are linked, not redistributed.",
+  "assistance": "AI-assisted architectural interpretation and procedural recipe authoring; deterministic Python/Blender export. No photographic textures.",
+  "review": {
+    "status": "pending",
+    "reviewer": null,
+    "checks": {},
+    "notes": "Automated export and source-registration checks, and multi-view studio inspection, are retained in the linked evidence. Independent rights, appearance and map integration approval remains pending.",
+    "evidence": "https://github.com/benjamintd/open-landmarks/blob/main/collection/elizabeth-tower/review-evidence.json"
+  },
+  "modelingNotes": [
+    "Actual OSM way/123557148 (Q41225), its 96m height and 82 mapped parts establish the geographic outline, shaft, clock stage and roof tiers. The 12m-square Parliament description refers to the main tower: the OSM outline includes projections and low annexes. Original source tags are retained.",
+    "UK Parliament facts-figures confirms four 7m dials; towers-of-parliament gives 96.3m while the facts page rounds to96m. The mapped96m tip is retained. https://www.parliament.uk/about/living-heritage/building/palace/big-ben/facts-figures/ and https://www.parliament.uk/about/living-heritage/building/palace/architecture/palacestructure/towers-of-parliament/",
+    "Individually inspected Commons Elizabeth Tower and north front by Diliff, and June2023 exterior IMG7513 show restored blue clock tracery, paired narrow lancets, horizontal courses, lower open arcade, dormers, upper belfry and gilded finial. Parliament restoration report confirms Prussian-blue hands and frames. The library pompidou-blue and invalides-gold finishes approximate those colours; clock faces are opaque pale trim, not emissive windows or textures.",
+    "The clock-stage wall is simplified by0.04m and set back0.06m to leave space for mouldings. Lancet rows, traceries, crenellation, rail posts, roof seams and abstract crockets are photo-guided inference. The four7m dials have original geometry for Roman numerals and static10:08 hands. Individual glass pieces, coats of arms, inscriptions and fine sculpture are omitted.",
+    "Both authored LODs retain all four dials, shaft rhythms, the open lower gallery, two roof tiers, eight mapped lower dormer strips, six mapped upper strips and96m finial. Low omits small tracery, coursing, dial minute ticks and most roof seams. The neighbouring Palace of Westminster is excluded."
+  ],
+  "source": "source.blend.gz",
+  "spatialSource": "spatial-source.json",
+  "preview": "preview.webp",
+  "previewDirection": [
+    1.5,
+    0.75,
+    2
+  ],
+  "wikidata": "Q41225"
+}

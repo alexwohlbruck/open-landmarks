@@ -31,6 +31,7 @@ test('validator rejects corrupt hashes, invalid anchor, escaping source path and
   for (const [mutate, message] of [
     [a => a.lods.detail.sha256 = 'incorrect', /hash mismatch/],
     [a => a.anchor = [NaN,0], /invalid anchor/],
+    [a => a.previewCompanions = [{id:a.id,offsetBlenderM:[0,0,0]}], /invalid preview companions/],
     [a => a.source = '../private.blend', /standard source filenames/],
     [a => a.boundsBlenderM[1][2] = 1, /exceeds declared bounds/],
   ]) {
@@ -167,4 +168,24 @@ test('approved Commons Eiffel retains its source grant in metadata and the websi
   const source=row.asset.modelSources[0];
   const page=await readFile(new URL('landmarks/eiffel-tower/index.html',output),'utf8');
   for(const text of ['Model sources',source.author,source.sourcePage,source.licenseUrl])assert(page.includes(text));
+});
+
+
+test('Parliament preview uses the published clock-tower revision at its geographic offset',async()=>{
+  const pointer=await get('/api/v1/preview.json'),catalogue=await get(pointer.catalogue);
+  const {assets}=await get(catalogue.assets);
+  const palace=assets.find(a=>a.id==='palace-of-westminster'),clock=assets.find(a=>a.id==='elizabeth-tower');
+  const html=await readFile(new URL('landmarks/palace-of-westminster/index.html',output),'utf8');
+  const spec=JSON.parse(html.match(/<script id="preview-data" type="application\/json">(.*?)<\/script>/s)[1]);
+  assert.equal(spec.url,palace.lods.detail.url);
+  assert.equal(spec.companions.length,1);
+  const companion=spec.companions[0];
+  assert.equal(companion.url,clock.lods.detail.url);
+  assert.equal(companion.gzip,clock.lods.detail.gzip.url);
+  const east=(clock.anchor[0]-palace.anchor[0])*111319.49*Math.cos(palace.anchor[1]*Math.PI/180);
+  const north=(clock.anchor[1]-palace.anchor[1])*111319.49;
+  assert(Math.abs(companion.offset[0]-east)<.5);
+  assert.equal(companion.offset[1],0);
+  assert(Math.abs(companion.offset[2]+north)<.5);
+  assert(html.includes('Downloads contain the Palace of Westminster model.'));
 });
