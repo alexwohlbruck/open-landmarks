@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "asset": "london-eye",
+  "status": "independent-review-pending",
+  "modelHashes": {
+    "model": "83267b7584aec63b539b7bd96f76996b26a2d4fc50fd041008b4920de4eeb2b9",
+    "low": "720e9fee1ab7dd29cbe465c156ccd22efe2e680890cdb498c5b30b7dc6dc2404"
+  },
+  "spatialSourceSha256": "a839165b11f63c15d4ad101281e4fbfde794bf43506185356fc5c3191597b9d1",
+  "exportValidation": [
+    {
+      "lod": "model",
+      "sha256": "83267b7584aec63b539b7bd96f76996b26a2d4fc50fd041008b4920de4eeb2b9",
+      "bytes": 706164,
+      "drawCalls": 4,
+      "triangles": 37558,
+      "gltfErrors": 0,
+      "gltfWarnings": 0,
+      "materials": [],
+      "windows": 0,
+      "unsupported": 0,
+      "degenerate": 0,
+      "opposed": 0,
+      "duplicate": 0,
+      "passed": true
+    },
+    {
+      "lod": "low",
+      "sha256": "720e9fee1ab7dd29cbe465c156ccd22efe2e680890cdb498c5b30b7dc6dc2404",
+      "bytes": 141076,
+      "drawCalls": 4,
+      "triangles": 6678,
+      "gltfErrors": 0,
+      "gltfWarnings": 0,
+      "materials": [],
+      "windows": 0,
+      "unsupported": 0,
+      "degenerate": 0,
+      "opposed": 0,
+      "duplicate": 0,
+      "passed": true
+    }
+  ],
+  "sourceRegistration": [
+    {
+      "lod": "model",
+      "sha256": "83267b7584aec63b539b7bd96f76996b26a2d4fc50fd041008b4920de4eeb2b9",
+      "checks": {
+        "height": true,
+        "grounded": true,
+        "plan": true,
+        "roofDirection": true
+      },
+      "metrics": {
+        "heightM": 135.0,
+        "planCoverage": 0.704232739887771,
+        "outsidePlanM2": 0.0,
+        "downwardSlopedRoofTriangles": 0
+      },
+      "passed": true
+    },
+    {
+      "lod": "low",
+      "sha256": "720e9fee1ab7dd29cbe465c156ccd22efe2e680890cdb498c5b30b7dc6dc2404",
+      "checks": {
+        "height": true,
+        "grounded": true,
+        "plan": true,
+        "roofDirection": true
+      },
+      "metrics": {
+        "heightM": 135.0,
+        "planCoverage": 0.683836815279461,
+        "outsidePlanM2": 0.0,
+        "downwardSlopedRoofTriangles": 0
+      },
+      "passed": true
+    }
+  ],
+  "studioInspection": {
+    "passed": true,
+    "notes": [
+      "Reviewed front, rear, overhead and low views against the retained north-bank photograph and capsule close-up. All32 level oval pods are visibly present, the paired outside cradles connect them to the rim, and glazing has transverse hoops.",
+      "Both LODs retain open space between spokes, two cable planes, the triangular rim and one-sided A-frame. The overhead view confirms oval capsule length and the boarding canopy. No filled wheel disk or floating capsule geometry. Low reduces tube sections and ribs while retaining the complete silhouette."
+    ]
+  },
+  "note": "These checks record structural/source-registration evidence and agent visual inspection. They do not approve rights or production map integration."
+}

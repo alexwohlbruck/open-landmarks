@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "asset": "palace-of-westminster",
+  "status": "independent-review-pending",
+  "modelHashes": {
+    "model": "eb9baac16ca2163d920b4e6ee5656e7371966b46c1e8b741f5d4be1e16e7f24b",
+    "low": "4b2d578e7a33abef6760a850a9510e0ba0a37df721b97463e1449f9b9cb43b8b"
+  },
+  "spatialSourceSha256": "af051d891416de3745fb82eb84dfbef9417dd82bf82706e1e60723b7391a0214",
+  "exportValidation": [
+    {
+      "lod": "model",
+      "sha256": "eb9baac16ca2163d920b4e6ee5656e7371966b46c1e8b741f5d4be1e16e7f24b",
+      "bytes": 1449028,
+      "drawCalls": 5,
+      "triangles": 32538,
+      "gltfErrors": 0,
+      "gltfWarnings": 0,
+      "materials": [],
+      "windows": 4852,
+      "unsupported": 0,
+      "degenerate": 0,
+      "opposed": 0,
+      "duplicate": 0,
+      "passed": true
+    },
+    {
+      "lod": "low",
+      "sha256": "4b2d578e7a33abef6760a850a9510e0ba0a37df721b97463e1449f9b9cb43b8b",
+      "bytes": 249620,
+      "drawCalls": 5,
+      "triangles": 5176,
+      "gltfErrors": 0,
+      "gltfWarnings": 0,
+      "materials": [],
+      "windows": 616,
+      "unsupported": 0,
+      "degenerate": 0,
+      "opposed": 0,
+      "duplicate": 0,
+      "passed": true
+    }
+  ],
+  "sourceRegistration": [
+    {
+      "lod": "model",
+      "sha256": "eb9baac16ca2163d920b4e6ee5656e7371966b46c1e8b741f5d4be1e16e7f24b",
+      "checks": {
+        "height": true,
+        "grounded": true,
+        "plan": true,
+        "roofDirection": true,
+        "upper0": true
+      },
+      "metrics": {
+        "heightM": 120.0,
+        "planCoverage": 0.9991694474305217,
+        "outsidePlanM2": 0.0,
+        "downwardSlopedRoofTriangles": 0,
+        "upper0": {
+          "coverage": 0.999950134814735,
+          "outsideM2": 0.0,
+          "z": 80
+        }
+      },
+      "passed": true
+    },
+    {
+      "lod": "low",
+      "sha256": "4b2d578e7a33abef6760a850a9510e0ba0a37df721b97463e1449f9b9cb43b8b",
+      "checks": {
+        "height": true,
+        "grounded": true,
+        "plan": true,
+        "roofDirection": true,
+        "upper0": true
+      },
+      "metrics": {
+        "heightM": 120.0,
+        "planCoverage": 0.9911314343165848,
+        "outsidePlanM2": 0.0,
+        "downwardSlopedRoofTriangles": 0,
+        "upper0": {
+          "coverage": 0.9940019784409324,
+          "outsideM2": 0.0,
+          "z": 80
+        }
+      },
+      "passed": true
+    }
+  ],
+  "studioInspection": {
+    "passed": true,
+    "notes": [
+      "Compared front, rear, overhead and low renders with the retained river panorama, northwest view, Victoria Tower exterior and entrance close-up. The river front has repeated pointed Gothic bays, roof pavilions and source-positioned pinnacles. Victoria Tower is continuous from the open Sovereigns Entrance to the crown and flagstaff; the central octagonal spire is continuous.",
+      "The overhead render retains all ten original courtyard voids and the separate steep Westminster Hall roof. Victoria slate roof pitches inward. There is no wall collapse or displaced tower geometry. Low preserves the full principal skyline and courtyard layout while omitting small pinnacles, ground soffits and dense window framing.",
+      "The Palace export leaves the separately registered Elizabeth Tower footprint clear. The workshop composes that existing asset at its geographic offset for the full ensemble. Approximate wall ornaments and window rows are disclosed in recipe notes; this remains a map-scale draft."
+    ]
+  },
+  "note": "These checks record structural/source-registration evidence and agent visual inspection. They do not approve rights or production map integration."
+}

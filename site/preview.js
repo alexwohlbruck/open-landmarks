@@ -4,21 +4,36 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import {createModelView} from '../rendering/model-view.js';
 
 export async function preview(container, spec) {
-  const response = await fetch('DecompressionStream' in window ? spec.gzip : spec.url);
-  if (!response.ok) throw Error('Model unavailable');
-  const bytes = await ('DecompressionStream' in window
-    ? new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer()
-    : response.arrayBuffer());
-  const gltf = await new GLTFLoader().parseAsync(bytes, '');
+  const disposeModel=model=>model.traverse(o=>{
+    o.geometry?.dispose();
+    for(const material of o.material?(Array.isArray(o.material)?o.material:[o.material]):[])material.dispose();
+  });
+  const specs=[spec,...(spec.companions||[])];
+  const results=await Promise.allSettled(specs.map(async item=>{
+    const response=await fetch('DecompressionStream' in window ? item.gzip : item.url);
+    if(!response.ok)throw Error('Model unavailable');
+    const bytes=await ('DecompressionStream' in window
+      ? new Response(response.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer()
+      : response.arrayBuffer());
+    const {scene}=await new GLTFLoader().parseAsync(bytes,'');
+    if(item.offset)scene.position.fromArray(item.offset);
+    return scene;
+  }));
+  if(results.some(r=>r.status==='rejected')){
+    for(const result of results)if(result.status==='fulfilled')disposeModel(result.value);
+    throw results.find(r=>r.status==='rejected').reason;
+  }
+  const model=new THREE.Group();
+  for(const result of results)model.add(result.value);
   let renderer;
   try { renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); }
-  catch (error) { gltf.scene.traverse(o => { o.geometry?.dispose(); o.material?.dispose(); }); throw error; }
+  catch (error) { disposeModel(model); throw error; }
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.domElement.setAttribute('aria-label', `Interactive 3D model of ${spec.name}. Drag to orbit, scroll to zoom.`);
   renderer.domElement.setAttribute('role', 'img');
   renderer.domElement.tabIndex = 0;
-  const view=createModelView(gltf.scene,renderer,{direction:spec.direction});
+  const view=createModelView(model,renderer,{direction:spec.direction});
   const {camera,center,size}=view;
   const controls = new OrbitControls(camera, renderer.domElement); controls.target.copy(center);
   controls.minDistance = size * .65; controls.maxDistance = size * 5; controls.enablePan = false;
@@ -37,6 +52,6 @@ export async function preview(container, spec) {
   const observer = new ResizeObserver(resize); observer.observe(container);
   window.addEventListener('pagehide', () => {
     observer.disconnect(); controls.dispose(); view.dispose();renderer.dispose(); lightSelect.removeEventListener('change', lighting);
-    gltf.scene.traverse(o => { o.geometry?.dispose(); o.material?.dispose(); });
+    disposeModel(model);
   }, { once: true });
 }

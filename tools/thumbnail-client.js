@@ -1,4 +1,4 @@
-import {WebGLRenderer,SRGBColorSpace,Vector3} from 'three';
+import {WebGLRenderer,SRGBColorSpace,Vector3,Group} from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {createModelView} from '../rendering/model-view.js';
 
@@ -14,7 +14,13 @@ document.querySelector('button').onclick=async event=>{
     for(const [i,job] of jobs.entries()) {
       output.textContent=`Rendering ${i+1}/${jobs.length}: ${job.slug}`;
       const buffer=await (await fetch(`/collection/${job.slug}/detail.glb`)).arrayBuffer();
-      const {scene:model}=await new GLTFLoader().parseAsync(buffer,'');
+      const model=new Group();
+      model.add((await new GLTFLoader().parseAsync(buffer,'')).scene);
+      for(const companion of job.companions||[]){
+        const bytes=await (await fetch(`/collection/${companion.slug}/detail.glb`)).arrayBuffer();
+        const {scene}=await new GLTFLoader().parseAsync(bytes,'');
+        scene.position.fromArray(companion.offset);model.add(scene);
+      }
       let direction;
       if(job.direction)direction=new Vector3(...job.direction).normalize().multiplyScalar(Math.hypot(1.3,.85,1.6)).toArray();
       const view=createModelView(model,renderer,{aspect:640/534,direction});

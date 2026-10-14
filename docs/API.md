@@ -180,3 +180,12 @@ glazing uses `glass`. The source GLBs have passed full-area window support check
 in both LODs. See [the contract](MATERIALS.md).
 
 Optional `wikidata` identifies the depicted entity (for example `Q243`). `modelSources` records geometry imported from other creators: title, author, source page, original file URL and SHA-256, license and license URL, and modifications. It differs from `references`, which lists visual study material. Consumers must retain imported-model credits and applicable share-alike terms; the model's `artisticLicense` can differ from the collection's default CC BY 4.0.
+
+### Optional studio companions
+
+An asset may declare `previewCompanions: [{id, offsetBlenderM: [east, north, up]}]`
+for the website studio. These reference other independently downloadable assets
+in the same publication. The website converts their offsets to glTF east/up/south
+and loads the exact published model URLs. The geographic map catalogue continues
+to place each asset at its own anchor; companion meshes are not part of the
+parent's downloads or per-model budgets.

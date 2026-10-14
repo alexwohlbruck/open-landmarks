@@ -8,7 +8,14 @@ const root=new URL('../',import.meta.url),token=randomBytes(24).toString('hex');
 const args=process.argv.slice(2),flag=args.indexOf('--directions');
 const directions=flag<0?{}:JSON.parse(await readFile(args.splice(flag,2)[1]));
 const names=(await readdir(new URL('collection/',root))).filter(name=>!args.length||args.includes(name));
-const jobs=await Promise.all(names.map(async slug=>({slug,direction:directions[slug]??JSON.parse(await readFile(new URL(`collection/${slug}/asset.json`,root))).previewDirection}))),complete=new Set();
+const jobs=await Promise.all(names.map(async slug=>{
+  const asset=JSON.parse(await readFile(new URL(`collection/${slug}/asset.json`,root)));
+  return {slug,direction:directions[slug]??asset.previewDirection,companions:(asset.previewCompanions||[]).map(c=>{
+    const [east,north,up]=c.offsetBlenderM;
+    return {slug:c.id,offset:[east,up,-north]};
+  })};
+})),complete=new Set();
+const modelNames=new Set([...names,...jobs.flatMap(j=>j.companions.map(c=>c.slug))]);
 const bundle=await build({entryPoints:[new URL('tools/thumbnail-client.js',root).pathname],bundle:true,write:false,format:'esm'});
 const port=Number(process.env.PORT||5181);
 const server=createServer(async(req,res)=>{
@@ -30,7 +37,7 @@ const server=createServer(async(req,res)=>{
     if(url.pathname==='/jobs.json'){res.setHeader('Content-Type','application/json');res.end(JSON.stringify({jobs,token}));return;}
     if(url.pathname==='/renderer.js'){res.setHeader('Content-Type','text/javascript');res.end(bundle.outputFiles[0].contents);return;}
     const match=url.pathname.match(/^\/collection\/([a-z0-9-]+)\/detail\.glb$/);
-    if(!match||!names.includes(match[1]))throw Error('Not found');
+    if(!match||!modelNames.has(match[1]))throw Error('Not found');
     res.setHeader('Content-Type','model/gltf-binary');res.end(await readFile(new URL(url.pathname.slice(1),root)));
   } catch(error){res.statusCode=400;res.end(error.message);}
 });

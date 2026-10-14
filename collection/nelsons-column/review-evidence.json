@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "asset": "nelsons-column",
+  "status": "independent-review-pending",
+  "modelHashes": {
+    "model": "a2a1138a7e3b3f5434f423d1d5d0f9daed64c5ecc8fcf365651a9c7c41713a08",
+    "low": "71d2cb95a98738c192b138b9ef668d55e443a249ee9d06d37f539cf8bedccdee"
+  },
+  "spatialSourceSha256": "cc56fb26a13c48de6b06d20dab4778a31bd48b87dfb42dfafbf97829bccd0c67",
+  "exportValidation": [
+    {
+      "lod": "model",
+      "sha256": "a2a1138a7e3b3f5434f423d1d5d0f9daed64c5ecc8fcf365651a9c7c41713a08",
+      "bytes": 293112,
+      "drawCalls": 3,
+      "triangles": 13352,
+      "gltfErrors": 0,
+      "gltfWarnings": 0,
+      "materials": [],
+      "windows": 0,
+      "unsupported": 0,
+      "degenerate": 0,
+      "opposed": 0,
+      "duplicate": 0,
+      "passed": true
+    },
+    {
+      "lod": "low",
+      "sha256": "71d2cb95a98738c192b138b9ef668d55e443a249ee9d06d37f539cf8bedccdee",
+      "bytes": 64600,
+      "drawCalls": 3,
+      "triangles": 2848,
+      "gltfErrors": 0,
+      "gltfWarnings": 0,
+      "materials": [],
+      "windows": 0,
+      "unsupported": 0,
+      "degenerate": 0,
+      "opposed": 0,
+      "duplicate": 0,
+      "passed": true
+    }
+  ],
+  "sourceRegistration": [
+    {
+      "lod": "model",
+      "sha256": "a2a1138a7e3b3f5434f423d1d5d0f9daed64c5ecc8fcf365651a9c7c41713a08",
+      "checks": {
+        "height": true,
+        "grounded": true,
+        "plan": true,
+        "roofDirection": true,
+        "upper0": true
+      },
+      "metrics": {
+        "heightM": 51.599998474121094,
+        "planCoverage": 0.9999999704066157,
+        "outsidePlanM2": 0.0,
+        "downwardSlopedRoofTriangles": 0,
+        "upper0": {
+          "coverage": 0.9999999912445682,
+          "outsideM2": 0.006182041528293997,
+          "z": 16
+        }
+      },
+      "passed": true
+    },
+    {
+      "lod": "low",
+      "sha256": "71d2cb95a98738c192b138b9ef668d55e443a249ee9d06d37f539cf8bedccdee",
+      "checks": {
+        "height": true,
+        "grounded": true,
+        "plan": true,
+        "roofDirection": true,
+        "upper0": true
+      },
+      "metrics": {
+        "heightM": 51.599998474121094,
+        "planCoverage": 0.9999999704066157,
+        "outsidePlanM2": 0.0,
+        "downwardSlopedRoofTriangles": 0,
+        "upper0": {
+          "coverage": 0.9999999903218926,
+          "outsideM2": 0.0,
+          "z": 16
+        }
+      },
+      "passed": true
+    }
+  ],
+  "studioInspection": {
+    "passed": true,
+    "notes": "Inspected final front/rear/top and low-LOD sheet, full rear and hero close/aerial. Stepped plinth, four node-registered reclining lions, fluted tapered shaft, wider Corinthian capital and bicorne statue are visible from opposite bearings. Capital now stays within its mapped envelope. Low keeps all four lions, shaft flutes and Nelson. Sculptures and battle panels remain original abstract masses rather than literal replicas; figurative realism is limited, as recorded in NOTES."
+  },
+  "note": "These checks record structural/source-registration evidence and agent visual inspection. They do not approve rights or production map integration."
+}

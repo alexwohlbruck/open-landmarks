@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "asset": "elizabeth-tower",
+  "status": "independent-review-pending",
+  "modelHashes": {
+    "model": "cfc00bc16755d9dd8a989f1751ecb62deeec44f44c98a21a50db111bc462aaf3",
+    "low": "073f09850da39f08fa5bb4b5b7a4036360ddaba0e46fc1dab4aab9994ca2d674"
+  },
+  "spatialSourceSha256": "dd860be52fb2944ea153b8091881803b6ad6616fc1e6da26b74286cf7e5ac9ae",
+  "exportValidation": [
+    {
+      "lod": "model",
+      "sha256": "cfc00bc16755d9dd8a989f1751ecb62deeec44f44c98a21a50db111bc462aaf3",
+      "bytes": 1431068,
+      "drawCalls": 6,
+      "triangles": 33510,
+      "gltfErrors": 0,
+      "gltfWarnings": 0,
+      "materials": [],
+      "windows": 884,
+      "unsupported": 0,
+      "degenerate": 0,
+      "opposed": 0,
+      "duplicate": 0,
+      "passed": true
+    },
+    {
+      "lod": "low",
+      "sha256": "073f09850da39f08fa5bb4b5b7a4036360ddaba0e46fc1dab4aab9994ca2d674",
+      "bytes": 205680,
+      "drawCalls": 6,
+      "triangles": 4746,
+      "gltfErrors": 0,
+      "gltfWarnings": 0,
+      "materials": [],
+      "windows": 192,
+      "unsupported": 0,
+      "degenerate": 0,
+      "opposed": 0,
+      "duplicate": 0,
+      "passed": true
+    }
+  ],
+  "sourceRegistration": [
+    {
+      "lod": "model",
+      "sha256": "cfc00bc16755d9dd8a989f1751ecb62deeec44f44c98a21a50db111bc462aaf3",
+      "checks": {
+        "height": true,
+        "grounded": true,
+        "plan": true,
+        "roofDirection": true,
+        "upper0": true,
+        "upper1": true
+      },
+      "metrics": {
+        "heightM": 96.0,
+        "planCoverage": 0.9999999921130285,
+        "outsidePlanM2": 0.0,
+        "downwardSlopedRoofTriangles": 0,
+        "upper0": {
+          "coverage": 1.0000000000000004,
+          "outsideM2": 0.0,
+          "z": 50
+        },
+        "upper1": {
+          "coverage": 0.9999999928653031,
+          "outsideM2": 0.0,
+          "z": 64.9
+        }
+      },
+      "passed": true
+    },
+    {
+      "lod": "low",
+      "sha256": "073f09850da39f08fa5bb4b5b7a4036360ddaba0e46fc1dab4aab9994ca2d674",
+      "checks": {
+        "height": true,
+        "grounded": true,
+        "plan": true,
+        "roofDirection": true,
+        "upper0": true,
+        "upper1": true
+      },
+      "metrics": {
+        "heightM": 96.0,
+        "planCoverage": 0.9999999921125639,
+        "outsidePlanM2": 0.0,
+        "downwardSlopedRoofTriangles": 0,
+        "upper0": {
+          "coverage": 1.0000000000000004,
+          "outsideM2": 0.0,
+          "z": 50
+        },
+        "upper1": {
+          "coverage": 0.9999999906857643,
+          "outsideM2": 0.0,
+          "z": 64.9
+        }
+      },
+      "passed": true
+    }
+  ],
+  "studioInspection": {
+    "passed": true,
+    "notes": "Inspected final front/rear/top and low-LOD sheet plus full front and hero close/aerial. All four dial bearings are represented; blue Roman numerals and hands remain clear, shaft lancets and courses fit the wall, lower belfry has real air, gabled dormer ends are glazed, layered slate roofs and gold finial are readable. Low keeps the dials, open gallery, dormer ends and silhouette with reduced trim. No visible black inverted roof patches. Small heraldry, inscriptions and individual opal panes remain omitted as documented."
+  },
+  "note": "These checks record structural/source-registration evidence and agent visual inspection. They do not approve rights or production map integration."
+}

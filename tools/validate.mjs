@@ -29,6 +29,7 @@ export async function validateSubmission({ asset, dir }) {
   check(asset.source === 'source.blend.gz' && asset.spatialSource === 'spatial-source.json' && asset.preview === 'preview.webp', 'use the standard source filenames');
   const bounds = footprintBounds(asset.replacementFootprint); cellsForBounds(bounds);
   if(asset.previewDirection!==undefined)check(Array.isArray(asset.previewDirection)&&asset.previewDirection.length===3&&asset.previewDirection.every(Number.isFinite)&&asset.previewDirection[1]>0,'invalid preview direction (glTF east/up/south axes)');
+  if(asset.previewCompanions!==undefined)check(Array.isArray(asset.previewCompanions)&&asset.previewCompanions.every(c=>slug(c.id)&&c.id!==asset.id&&Array.isArray(c.offsetBlenderM)&&c.offsetBlenderM.length===3&&c.offsetBlenderM.every(Number.isFinite)),'invalid preview companions');
   const b = asset.boundsBlenderM;
   check(b?.length === 2 && b.every(v => v.length === 3 && v.every(Number.isFinite)) && b[0].every((v,i) => v <= b[1][i]), 'invalid 3D bounds');
   const placementErrors = placementMetadataErrors(asset);
